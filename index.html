@@ -25,7 +25,7 @@
                     role="tab">Texto</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="texto-tab" data-bs-toggle="tab" data-bs-target="#texto" type="button"
+                <button class="nav-link" id="texto-tab" data-bs-toggle="tab" data-bs-target="#color" type="button"
                     role="tab">Color</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -64,11 +64,63 @@
                     helpers de texto y color.</p>
             </div>
 
+            <div class="tab-pane fade" id="color" role="tabpanel">
+                  <h4>4. Helpers de Color</h4>
+                  <h5>4.1. Texto</h5>
+                  <p class="text-primary">Texto azul (primary)</p>
+                  <p class="text-success">Texto verde (success)</p>
+                  <p class="text-danger">Texto rojo (danger)</p>
+                  <p class="text-warning">Texto amarillo (warning)</p>
+                  <p class="text-info">Texto azul claro (info)</p>
+                  <p class="text-muted">Texto atenuado</p>
+                  <h5 class="mt-4">4.2. Fondo</h5>
+                  <div class="bg-primary text-white p-2 mb-2">Fondo azul - Primary</div>
+                  <div class="bg-success text-white p-2 mb-2">Fondo verde - Success</div>
+                  <div class="bg-warning text-dark p-2 mb-2">Fondo amarillo - Warning</div>
+                  <div class="bg-danger text-white p-2 mb-2">Fondo rojo - Danger</div>
+                  <div class="bg-info text-dark p-2 mb-2">Fondo azul claro - Info</div>
+                  <div class="bg-light text-dark p-2 mb-2">Fondo claro - Light</div>
+                  <div class="bg-dark text-white p-2 mb-2">Fondo oscuro - Dark</div>
+                  <div class="bg-secondary text-white p-2 mb-2">Fondo gris - Secondary</div>
+            </div>
             <!-- Visualización -->
             <div class="tab-pane fade" id="visualizacion" role="tabpanel">
-                <div class="d-block d-md-none bg-warning p-3">Visible solo en pantallas pequeñas</div>
-                <div class="d-none d-md-block bg-success text-white p-3">Visible solo en pantallas medianas o mayores
-                </div>
+            <h4>5. Helpers de Visualización</h4>
+            <p class="mb-4"><strong>Controla la visibilidad de los elementos:</strong></p>
+
+            <!-- d-none -->
+            <div class="d-none bg-danger text-white p-2 mb-3">
+            
+            </div>
+            <p><strong class = "text-danger">d-none:</strong> oculta completamente el elemento.</p>
+
+            <!-- d-block -->
+            <div class="d-block bg-success text-white p-2 mb-3">
+              Soy un bloque (d-block)
+            </div>
+            <p><strong class = "text-danger">d-block:</strong>  visible como bloque (ocupa todo el ancho disponible).</p>
+
+            <!-- d-inline -->
+            <div>
+              <span class="d-inline bg-warning text-dark p-1">Elemento en línea (1)</span>
+              <span class="d-inline bg-warning text-dark p-1">Elemento en línea (2)</span>
+            </div>
+            <p class="mt-2"><strong class = "text-danger">d-inline:</strong> elementos aparecen uno junto al otro.</p>
+
+            <!-- d-flex -->
+            <div class="d-flex justify-content-between bg-primary text-white p-2 my-3">
+              <div>Caja 1</div>
+              <div>Caja 2</div>
+              <div>Caja 3</div>
+            </div>
+            <p><strong class = "text-danger">d-flex:</strong> contenedor con display flex. Las cajas están alineadas horizontalmente.</p>
+
+            <!-- Responsive visibility -->
+            <div class="bg-info text-white p-2 mt-4 d-md-none d-lg-block d-sm-none d-xs-none">
+              Este contenido está <strong>oculto en pantallas medianas</strong> y <strong>visible en pantallas grandes, pantallas pequeñas y extra pequeñas</strong>
+            </div>
+            <p><strong class = "text-danger">d-md-none d-lg-block:</strong> oculto en md, visible en lg, sm y xs.</p>
+
             </div>
 
             <!-- Flexbox -->

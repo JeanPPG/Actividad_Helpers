@@ -50,37 +50,45 @@
             </li>
         </ul>
 
-        <!-- Tab content -->
+            <!-- Tab content -->
         <div class="tab-content p-4 bg-white border border-top-0 rounded-bottom">
             <!-- Espaciado -->
             <div class="tab-pane fade show active" id="espaciado" role="tabpanel">
-                <div class="bg-primary text-white mt-3 mb-4 px-5 py-3">
-                    <p class="mb-0">
-                        Este bloque tiene:<br>
-                        <strong>mt-3</strong> (margen superior 1rem),<br>
-                        <strong>mb-4</strong> (margen inferior 1.5rem),<br>
-                        <strong>px-5</strong> (padding horizontal 3rem),<br>
-                        <strong>py-3</strong> (padding vertical 1rem),<br>
-                        <strong>mx-auto</strong> (centrado horizontal),<br>
-                        y <strong>w-75</strong> (75% del ancho).
-                    </p>
-                </div>
-                <div class="bg-warning text-dark mt-2 mb-5 px-3 py-4 mx-auto w-50">
-                    <p class="mb-0">Este bloque tiene:</p>
-                        <strong>mt-2</strong> (margen superior 0.5rem),<br>
-                        <strong>mb-5</strong> (margen inferior 3rem),<br>
-                        <strong>px-3</strong> (padding horizontal 1rem),<br>
-                        <strong>py-4</strong> (padding vertical 1.5rem),<br>
-                        <strong>mx-auto</strong> (centrado horizontal),<br> y
-                        <strong>w-50</strong> (50% del ancho),<br>
-                    </p>
-                </div>
+                <h2>Ejemplos de margin:</h2>
+
+                <div class="m-3 bg-light border">Margen m-3 (1rem en todos los lados)</div>
+                <div class="mt-2 bg-light border">Margen mt-2 (0.5rem arriba)</div>
+                <div class="mx-auto bg-light border" style="width: 200px;">Margen mx-auto (centrado horizontalmente)</div>
+                <div class="mb-5 bg-light border">Margen mb-5 (3rem abajo)</div>
+
+                <h2>Ejemplos de padding:</h2>
+
+                <div class="p-4 bg-light border">Relleno p-4 (1.5rem en todos los lados)</div>
+                <div class="pl-1 bg-light border">Relleno pl-1 (0.25rem a la izquierda)</div>
+                <div class="py-3 bg-light border">Relleno py-3 (1rem arriba y abajo)</div>
+                <div class="p-0 bg-light border">Relleno p-0 (sin relleno)</div>
+
             </div>
 
             <!-- Texto y Color -->
             <div class="tab-pane fade" id="texto" role="tabpanel">
-                <p class="text-center text-danger fw-bold fst-italic">Texto centrado, en rojo, negrita e itálica usando
-                    helpers de texto y color.</p>
+                <h2 class="text-danger">Alineacion</h2>
+                <div class="text-start">Texto alineado a la izquierda</div>
+                <div class="text-center">Texto centrado</div>
+                <div class="text-end">Texto alineado a la derecha</div>
+                <h2 class="text-danger">Transformacion</h2>
+                <div class="text-lowercase">Texto en minúsculas</div>
+                <div class="text-uppercase">Texto en mayúsculas</div>
+                <div class="text-capitalize">Texto capitalizado</div>
+                <h2 class="text-danger">Peso y estilo</h2>
+                <div class="fw-bold">Texto en negrita</div>
+                <div class="fw-light">Texto en negrita ligera</div>
+                <div class="fst-italic">Texto en cursiva</div>
+                <div class="fst-normal">Texto normal</div>
+                <h2 class="text-danger">Tamaño</h2>
+                <div class="fs-1">Texto tamaño 1</div>
+                <div class="fs-2">Texto tamaño 2</div>
+                <div class="fs-3">Texto tamaño 3</div>
             </div>
 
             <div class="tab-pane fade" id="color" role="tabpanel">

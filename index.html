@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
-  <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-  </body>
-   
+
+<body class="bg-light">
+    <div class="container py-4">
+        <h1 class="mb-4">Ejemplos de Helpers en Bootstrap</h1>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="helperTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="espaciado-tab" data-bs-toggle="tab" data-bs-target="#espaciado"
+                    type="button" role="tab">Espaciado</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="texto-tab" data-bs-toggle="tab" data-bs-target="#texto" type="button"
+                    role="tab">Texto</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="texto-tab" data-bs-toggle="tab" data-bs-target="#texto" type="button"
+                    role="tab">Color</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="visualizacion-tab" data-bs-toggle="tab" data-bs-target="#visualizacion"
+                    type="button" role="tab">Visualización</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="flexbox-tab" data-bs-toggle="tab" data-bs-target="#flexbox" type="button"
+                    role="tab">Flexbox</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tamano-tab" data-bs-toggle="tab" data-bs-target="#tamano" type="button"
+                    role="tab">Tamaño</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="borde-tab" data-bs-toggle="tab" data-bs-target="#borde" type="button"
+                    role="tab">Bordes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="posicion-tab" data-bs-toggle="tab" data-bs-target="#posicion" type="button"
+                    role="tab">Posición</button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content p-4 bg-white border border-top-0 rounded-bottom">
+            <!-- Espaciado -->
+            <div class="tab-pane fade show active" id="espaciado" role="tabpanel">
+                <div class="bg-primary text-white p-4 m-3">Este bloque usa <strong>padding (p-4)</strong> y
+                    <strong>margin (m-3)</strong></div>
+            </div>
+
+            <!-- Texto y Color -->
+            <div class="tab-pane fade" id="texto" role="tabpanel">
+                <p class="text-center text-danger fw-bold fst-italic">Texto centrado, en rojo, negrita e itálica usando
+                    helpers de texto y color.</p>
+            </div>
+
+            <!-- Visualización -->
+            <div class="tab-pane fade" id="visualizacion" role="tabpanel">
+                <div class="d-block d-md-none bg-warning p-3">Visible solo en pantallas pequeñas</div>
+                <div class="d-none d-md-block bg-success text-white p-3">Visible solo en pantallas medianas o mayores
+                </div>
+            </div>
+
+            <!-- Flexbox -->
+            <div class="tab-pane fade" id="flexbox" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center bg-light border p-3">
+                    <div class="bg-info text-white p-2">Item 1</div>
+                    <div class="bg-info text-white p-2">Item 2</div>
+                    <div class="bg-info text-white p-2">Item 3</div>
+                </div>
+            </div>
+
+            <!-- Tamaño -->
+            <div class="tab-pane fade" id="tamano" role="tabpanel">
+                <div class="bg-secondary text-white w-50 h-25 p-3">Este bloque tiene <strong>w-50</strong> (50% ancho) y
+                    <strong>h-25</strong> (25% altura contenedor)</div>
+            </div>
+
+            <!-- Bordes -->
+            <div class="tab-pane fade" id="borde" role="tabpanel">
+                <div class="border border-3 border-primary rounded p-3">Bloque con <strong>borde azul</strong> y
+                    <strong>bordes redondeados</strong></div>
+            </div>
+
+            <!-- Posición -->
+            <div class="tab-pane fade" id="posicion" role="tabpanel">
+                <div class="position-relative bg-light" style="height: 150px;">
+                    <div class="position-absolute top-0 start-0 bg-danger text-white px-2">Posicionado en la esquina
+                        superior izquierda</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
 
 </body>
-</html> 
+
+</html>

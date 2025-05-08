@@ -54,8 +54,27 @@
         <div class="tab-content p-4 bg-white border border-top-0 rounded-bottom">
             <!-- Espaciado -->
             <div class="tab-pane fade show active" id="espaciado" role="tabpanel">
-                <div class="bg-primary text-white p-4 m-3">Este bloque usa <strong>padding (p-4)</strong> y
-                    <strong>margin (m-3)</strong></div>
+                <div class="bg-primary text-white mt-3 mb-4 px-5 py-3">
+                    <p class="mb-0">
+                        Este bloque tiene:<br>
+                        <strong>mt-3</strong> (margen superior 1rem),<br>
+                        <strong>mb-4</strong> (margen inferior 1.5rem),<br>
+                        <strong>px-5</strong> (padding horizontal 3rem),<br>
+                        <strong>py-3</strong> (padding vertical 1rem),<br>
+                        <strong>mx-auto</strong> (centrado horizontal),<br>
+                        y <strong>w-75</strong> (75% del ancho).
+                    </p>
+                </div>
+                <div class="bg-warning text-dark mt-2 mb-5 px-3 py-4 mx-auto w-50">
+                    <p class="mb-0">Este bloque tiene:</p>
+                        <strong>mt-2</strong> (margen superior 0.5rem),<br>
+                        <strong>mb-5</strong> (margen inferior 3rem),<br>
+                        <strong>px-3</strong> (padding horizontal 1rem),<br>
+                        <strong>py-4</strong> (padding vertical 1.5rem),<br>
+                        <strong>mx-auto</strong> (centrado horizontal),<br> y
+                        <strong>w-50</strong> (50% del ancho),<br>
+                    </p>
+                </div>
             </div>
 
             <!-- Texto y Color -->
@@ -125,23 +144,125 @@
 
             <!-- Flexbox -->
             <div class="tab-pane fade" id="flexbox" role="tabpanel">
-                <div class="d-flex justify-content-between align-items-center bg-light border p-3">
-                    <div class="bg-info text-white p-2">Item 1</div>
-                    <div class="bg-info text-white p-2">Item 2</div>
-                    <div class="bg-info text-white p-2">Item 3</div>
+                <h1 class="mb-4 text-primary">Helpers de Flexbox en Bootstrap</h1>
+
+                <!-- Sección: Justificación horizontal -->
+                <div class="mb-5">
+                    <h4 class="text-info">Justificación horizontal</h4>
+
+                    <div class="bg-white p-3 border rounded shadow-sm mb-2 d-flex justify-content-start">
+                        <div class="bg-primary text-white px-3 py-2 rounded">Justificado al inicio</div>
+                    </div>
+
+                    <div class="bg-white p-3 border rounded shadow-sm mb-2 d-flex justify-content-center">
+                        <div class="bg-success text-white px-3 py-2 rounded">Centrado</div>
+                    </div>
+
+                    <div class="bg-white p-3 border rounded shadow-sm mb-2 d-flex justify-content-between">
+                        <div class="bg-warning text-dark px-3 py-2 rounded">Inicio</div>
+                        <div class="bg-warning text-dark px-3 py-2 rounded">Fin</div>
+                    </div>
+
+                    <pre class="bg-dark text-white p-3 rounded"><code>
+            .d-flex
+            .justify-content-start | .justify-content-center | .justify-content-between
+                    </code></pre>
+                </div>
+
+                <!-- Sección: Alineación vertical -->
+                <div class="mb-5">
+                    <h4 class="text-info">Alineación vertical</h4>
+
+                    <div class="bg-white p-3 border rounded shadow-sm mb-2 d-flex align-items-start"
+                        style="height: 80px;">
+                        <div class="bg-danger text-white px-3 py-2 rounded">Alineado arriba</div>
+                    </div>
+
+                    <div class="bg-white p-3 border rounded shadow-sm mb-2 d-flex align-items-center"
+                        style="height: 80px;">
+                        <div class="bg-secondary text-white px-3 py-2 rounded">Alineado al centro</div>
+                    </div>
+
+                    <pre class="bg-dark text-white p-3 rounded"><code>
+            .d-flex
+            .align-items-start | .align-items-center
+                    </code></pre>
+                </div>
+
+                <!-- Sección: Dirección de columna -->
+                <div class="mb-5">
+                    <h4 class="text-info">Dirección de columna</h4>
+
+                    <div class="bg-white p-3 border rounded shadow-sm d-flex flex-column gap-2">
+                        <div class="bg-info text-white px-3 py-2 rounded">Elemento 1</div>
+                        <div class="bg-info text-white px-3 py-2 rounded">Elemento 2</div>
+                        <div class="bg-info text-white px-3 py-2 rounded">Elemento 3</div>
+                    </div>
+
+                    <pre class="bg-dark text-white p-3 rounded"><code>
+            .d-flex
+            .flex-column
+                    </code></pre>
                 </div>
             </div>
 
+
+
             <!-- Tamaño -->
             <div class="tab-pane fade" id="tamano" role="tabpanel">
-                <div class="bg-secondary text-white w-50 h-25 p-3">Este bloque tiene <strong>w-50</strong> (50% ancho) y
-                    <strong>h-25</strong> (25% altura contenedor)</div>
+                <h1 class="mb-4 text-primary">Helpers de Tamaño en Bootstrap</h1>
+
+                <div class="bg-light p-4 border rounded">
+
+                    <!-- Sección: Anchos -->
+                    <div class="mb-5">
+                        <h4 class="text-info">Control de Ancho</h4>
+
+                        <div class="bg-white p-3 border rounded shadow-sm mb-3">
+                            <div class="bg-primary text-white w-25 p-2 mb-2 rounded">Ancho 25% (.w-25)</div>
+                            <div class="bg-success text-white w-50 p-2 mb-2 rounded">Ancho 50% (.w-50)</div>
+                            <div class="bg-warning text-dark w-75 p-2 mb-2 rounded">Ancho 75% (.w-75)</div>
+                            <div class="bg-danger text-white w-100 p-2 rounded">Ancho 100% (.w-100)</div>
+                        </div>
+
+                        <pre class="bg-dark text-white p-3 rounded"><code>
+            .w-25   // 25%
+            .w-50   // 50%
+            .w-75   // 75%
+            .w-100  // 100%
+                        </code></pre>
+                    </div>
+
+                    <!-- Sección: Altos -->
+                    <div class="mb-3">
+                        <h4 class="text-info">Control de Alto</h4>
+
+                        <div class="bg-white border rounded shadow-sm p-3" style="height: 500px;">
+                            <div
+                                class="bg-info text-white h-25 mb-3 rounded d-flex align-items-center justify-content-center">
+                                Alto 25% (.h-25)
+                            </div>
+                            <div
+                                class="bg-dark text-white h-100 rounded d-flex align-items-center justify-content-center">
+                                Alto 100% (.h-100)
+                            </div>
+                        </div>
+
+                        <pre class="bg-dark text-white p-3 rounded"><code>
+            .h-25   // 25% del alto del contenedor padre
+            .h-100  // 100% del alto del contenedor padre
+                        </code></pre>
+                    </div>
+                </div>
             </div>
+
+
 
             <!-- Bordes -->
             <div class="tab-pane fade" id="borde" role="tabpanel">
                 <div class="border border-3 border-primary rounded p-3">Bloque con <strong>borde azul</strong> y
-                    <strong>bordes redondeados</strong></div>
+                    <strong>bordes redondeados</strong>
+                </div>
             </div>
 
             <!-- Posición -->

@@ -266,20 +266,29 @@
 
             <!-- Bordes -->
             <div class="tab-pane fade mb-5" id="borde" role="tabpanel">
+                <h1 class="mb-4 text-black">Helpers de Bordes en Bootstrap</h1>
+                <div class="border border-1 p-3 mb-4">
+                  Borde normal de 1px.
+                </div>
+
+                <div class="border border-success p-3 mb-4">
+                  Borde con color verde.
+                </div>
+
                 <div class="border border-3 border-primary rounded p-3 mb-3">
                   Bloque con borde azul y bordes redondeados.
                 </div>
               
-                <div class="border-top border-3 p-3 mb-3">
+                <div class="border-top border-3 p-3 mb-4">
                   Borde superior solamente.
                 </div>
-              
-                <div class="border border-success p-3 mb-3">
-                  Borde con color verde.
+
+                <div class="border-bottom border-3 p-3 mb-4">
+                  Borde inferior solamente.
                 </div>
               
-                <div class="bg-success-subtle border rounded-circle p-3 mb-3 text-center" style="width: 200px; height:200px;">
-                  Forma circular
+                <div class="bg-success-subtle border border-success rounded-circle p-3 mb-4 text-center" style="width: 200px; height:200px;">
+                  Forma circular con borde verde.
                 </div>
               
                 <div class="border-0 bg-light p-3">
@@ -290,39 +299,45 @@
 
             <!-- Posición -->
             <div class="tab-pane fade" id="posicion" role="tabpanel">
-                <!-- Estático -->
-                <div class="position-static border p-2 mb-2 bg-light">
-                  <strong>position-static</strong>: posición por defecto (no afecta al flujo normal).
+                <h1 class="mb-4 text-black">Helpers de Posición en Bootstrap</h1>
+
+                <h3 class="mb-4 text-black">Posicion Estatica</h3>
+                <div class="position-static bg-light-subtle border p-2 mb-2">
+                  Posición por defecto usando position-static
                 </div>
               
-                <!-- Relativo -->
-                <div class="position-relative border p-2 mb-4 bg-white">
-                  <strong>position-relative</strong>: base para posiciones absolutas dentro.
-                  <div class="position-absolute top-0 start-0 bg-primary text-white px-2 py-1" style="font-size: 0.9rem;">
-                    Absoluto interno
+                <h3 class="mb-4 text-black">Posicion Relativa</h3>
+                <div class="position-relative bg-light-subtle border p-4 mb-4 bg-white">
+                  <div class="position-absolute top-0 start-0 bottom-0 bg-primary text-white px-4 py-1" style="font-size: 0.9rem;">
+                  position-absolute, dentro de un contenedor position-relative.
                   </div>
                 </div>
               
-                <!-- Absoluto -->
-                <div class="position-relative border p-4 mb-4" style="height: 100px;">
+                <h3 class="mb-4 text-black">Posicion Absoluta</h3>
+                <div class="position-relative bg-light-subtle border p-4 mb-4" style="height: 100px;">
                   <div class="position-absolute top-0 start-0 bg-warning px-2 py-1">
-                    <strong>position-absolute</strong>
+                    position-absolute
                   </div>
                 </div>
               
-                <!-- Fijo -->
+                <div class="position-fixed top-0 start-0 bg-info text-white px-2 py-1" style="z-index: 1050;">
+                  <p class="mb-0">Posición fija en la parte superior izquierda.</p>
+                  <p class="mb-0">Con position-fixed</p>
+                </div>
                 <div class="position-fixed top-0 end-0 bg-danger text-white px-2 py-1" style="z-index: 1050;">
-                  <strong>Fijo arriba derecha</strong>
+                  <p class="mb-0">Posición fija en la parte superior derecha.</p>
+                  <p class="mb-0">Con position-fixed</p>
                 </div>
               
-                <!-- Sticky -->
+                
+                <h3 class="mb-4 text-black">Posicion Sticky</h3>
                 <div class="position-sticky top-0 bg-success text-white p-2 mb-4" style="z-index: 1020;">
-                  <strong>position-sticky</strong>: se queda fijo al hacer scroll.
+                  Se queda fijo al hacer scroll con position-sticky.
                 </div>
               
-                <!-- Centrado absoluto -->
-                <div class="position-relative border" style="height: 200px;">
-                  <div class="position-absolute top-50 start-50 translate-middle bg-info text-white px-3 py-2 rounded">
+                <h3 class="mb-4 text-black">Posicion Centrado</h3>
+                <div class="position-relative bg-light-subtle border" style="height: 200px;">
+                  <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white px-3 py-2 rounded">
                     <strong>Centrado con translate-middle</strong>
                   </div>
                 </div>
